@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio158 - JSON - Pasar de objeto a texto JSON: método stringify</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<script type="text/javascript">
+
+		function toJSON() {
+			var myObject = {
+				price:1300,
+				color:"green"
+			}
+
+			var text = JSON.stringify(myObject);
+			
+			document.getElementById("content").innerHTML = text;
+		}
+
+	</script>
+
+	<body>
+		<h1>Ejercicio158 - JSON - Pasar de objeto a texto JSON: método stringify</h1>
+		<hr />
+		<button onclick="toJSON();">Leer JSON</button>
+		<p id="content"></p>
+	</body>
+</html>
+
